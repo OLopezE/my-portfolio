@@ -2,12 +2,18 @@ import React from 'react'
 
 import { Link } from 'react-router-dom';
 
-import { NavigationBar, FeaturedLinks } from './Navbar.style';
+import {
+  HomeLinkWrapper,
+  NavigationBar,
+  FeaturedLinks
+} from './Navbar.style';
 
 const Navbar = () => {
   return (
     <NavigationBar>
-      <div>Home</div>
+      <HomeLinkWrapper to="/">
+        Home
+      </HomeLinkWrapper>
       <FeaturedLinks>
         <Link to="/">My experience</Link>
         <Link to="/">Personal Projects</Link>

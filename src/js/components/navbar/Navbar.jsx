@@ -3,7 +3,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 import {
-  HomeLinkWrapper,
+  ContactLink,
+  HomeLink,
   NavigationBar,
   FeaturedLinks
 } from './Navbar.style';
@@ -11,15 +12,15 @@ import {
 const Navbar = () => {
   return (
     <NavigationBar>
-      <HomeLinkWrapper to="/">
+      <HomeLink to="/">
         Home
-      </HomeLinkWrapper>
+      </HomeLink>
       <FeaturedLinks>
-        <Link to="/">My experience</Link>
-        <Link to="/">Personal Projects</Link>
-        <Link to="/">About me</Link>
+        <Link to="/work-experience">My experience</Link>
+        <Link to="/portfolio">Personal Projects</Link>
+        <Link to="/about-me">About me</Link>
       </FeaturedLinks>
-      <div>Contact me</div>
+      <ContactLink to="/contact-me">Contact me</ContactLink>
     </NavigationBar>
   )
 }

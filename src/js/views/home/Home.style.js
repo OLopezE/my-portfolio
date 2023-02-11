@@ -4,7 +4,7 @@ const HomeGrid = styled.div`
   display: grid;
   gap: 2px;
   min-height: 100vh;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   background-color: black;
 
 
@@ -14,7 +14,10 @@ const HomeGrid = styled.div`
 `;
 
 const BigAssTitle = styled.h1`
-
+  margin: 0;
+  font-size: 7rem;
+  text-align: left;
+  padding: 1rem;;
 `;
 
 const ElegantSubtitle = styled.h3`
@@ -22,7 +25,7 @@ const ElegantSubtitle = styled.h3`
 `;
 
 const TitleSection = styled.section`
-  grid-column: 1/7
+  grid-column: span 4
 `
 
 export {

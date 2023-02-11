@@ -16,11 +16,11 @@ const Navbar = () => {
         Home
       </HomeLink>
       <FeaturedLinks>
-        <Link to="/work-experience">My experience</Link>
-        <Link to="/portfolio">Personal Projects</Link>
-        <Link to="/about-me">About me</Link>
+        <Link to="/work-experience">&#129299; My experience</Link>
+        <Link to="/portfolio">&#128187; Personal Projects</Link>
+        <Link to="/about-me">&#9757; About me</Link>
       </FeaturedLinks>
-      <ContactLink to="/contact-me">Contact me</ContactLink>
+      <ContactLink to="/contact-me">Contact me &#9997;</ContactLink>
     </NavigationBar>
   )
 }

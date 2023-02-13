@@ -15,9 +15,6 @@ function App() {
         <Route path='/about-me' element={<Contact />} />
         <Route path='/contact-me' element={<Contact />} />
       </Routes>
-      <header className="App-header">
-        <p>loscar</p>
-      </header>
     </div>
   );
 }

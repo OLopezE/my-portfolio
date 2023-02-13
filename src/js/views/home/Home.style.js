@@ -3,14 +3,41 @@ import styled from 'styled-components';
 const HomeGrid = styled.div`
   display: grid;
   gap: 2px;
-  min-height: 100vh;
   grid-template-columns: repeat(5, 1fr);
   background-color: black;
-
+  min-height: 100vh;
 
   > section {
-    background-color: white;
+    background-color: #FFF4EB;;
   }
+`;
+
+const LargeSection = styled.section`
+  grid-row: span 2;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+`;
+
+const HalfCircle = styled.div`
+ ::before, ::after {
+   content: '';
+   width: 100%;
+   aspect-ratio: 1/1;
+   background-color: aqua;
+   border-radius: 50%;
+   position: absolute;
+   background: rgb(131,58,180);
+   background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+ }
+
+ ::before {
+   left: -50%;
+ }
+
+ ::after {
+   left: 50%;
+ }
 `;
 
 const BigAssTitle = styled.h1`
@@ -20,26 +47,22 @@ const BigAssTitle = styled.h1`
   padding: 1rem;;
 `;
 
-const ElegantSubtitle = styled.h3`
-  text-align: left;
-  margin: 0;
-  padding: 0 2rem;;
+const NameSection = styled.section`
+  grid-column: span 3;
 `;
 
-const TitleSection = styled.section`
-  grid-column: span 3;
-`
-
 const MyPicture = styled.img`
-
+  height: 70%;
+  border: 2px solid black;
 `;
 
 const MyPictureContainer = styled.div`
   grid-column: span 2;
-  grid-row: span 1;
+  grid-row: span 2;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
 
   background: rgb(63,94,251);
   background: radial-gradient(circle, #3f5efb 0%, #fc5546 36%, #3f5efb 76%, #fc5546 99%); 
@@ -60,11 +83,22 @@ const MyPictureContainer = styled.div`
 
 `;
 
+const LongSection = styled.section`
+  grid-column: span 2;
+`;
+
+const JobTitleSection = styled.section`
+  grid-column: span 4;
+`;
+
 export {
   HomeGrid,
   BigAssTitle,
-  ElegantSubtitle,
   MyPicture,
   MyPictureContainer,
-  TitleSection
+  NameSection,
+  JobTitleSection,
+  LargeSection,
+  HalfCircle,
+  LongSection
 }

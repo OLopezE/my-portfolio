@@ -1,8 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-function Contact() {
+const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>
+      <h1>Get in contact with me</h1>
+      <p>These are my socials</p>
+      <Link>Linkedin</Link>
+      <Link>Github</Link>
+    </div>
   )
 }
 

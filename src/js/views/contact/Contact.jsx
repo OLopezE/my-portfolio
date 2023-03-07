@@ -6,8 +6,8 @@ const Contact = () => {
     <div>
       <h1>Get in contact with me</h1>
       <p>These are my socials</p>
-      <Link>Linkedin</Link>
-      <Link>Github</Link>
+      <Link to='/'>Linkedin</Link>
+      <Link to='/'>Github</Link>
     </div>
   )
 }

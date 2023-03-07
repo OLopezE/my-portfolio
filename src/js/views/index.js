@@ -1,10 +1,13 @@
-import Home from "./home";
-import Contact from "./contact";
 import AboutMe from "./aboutMe";
+import Contact from "./contact";
+import Experience from "./experience";
+import Home from "./home";
+import Portfolio from "./projects";
 
 export {
-  Home,
+  AboutMe,
   Contact,
-  AboutMe
-
+  Experience,
+  Home,
+  Portfolio
 }

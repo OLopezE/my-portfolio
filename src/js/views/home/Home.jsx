@@ -5,10 +5,9 @@ import {
   BigAssTitle,
   MyPicture,
   MyPictureContainer,
-  NameSection,
-  JobTitleSection,
+  TitleSection,
+  AllRightsReservedSection,
   LargeSection,
-  HalfCircle,
   LongSection
 } from './Home.style';
 
@@ -17,29 +16,22 @@ import oscarPicture from '../../../assets/media/pictures/my-picture.png'
 const Home = () => {
   return (
     <HomeGrid>
-      <NameSection>
+      <TitleSection>
         <BigAssTitle>Oscar Lopez Escobar</BigAssTitle>
-      </NameSection>
+        <BigAssTitle>Portfolio / 2023</BigAssTitle>
+      </TitleSection>
       <MyPictureContainer>
         <MyPicture src={oscarPicture}/>
       </MyPictureContainer>
       <LargeSection>
-        <HalfCircle />
+        <iframe src="https://giphy.com/embed/VDf9UxxaxKPm9OWHT9" width="360" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
       </LargeSection>
       <LongSection>
-        <h4>
-          Embrace yourself and embrace others.
-        </h4>
-        <h4>
-          Explore nature.
-        </h4>
-        <h4>
-          
-        </h4>
+        <h1>Frontend Software Engineer</h1>
       </LongSection>
-      <JobTitleSection>
-        <BigAssTitle>Frontend Software Engineer</BigAssTitle>
-      </JobTitleSection>
+      <AllRightsReservedSection>
+        <h2>All rights reserved</h2>
+      </AllRightsReservedSection>
     </HomeGrid>
   );
 };

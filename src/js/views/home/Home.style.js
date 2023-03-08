@@ -5,7 +5,6 @@ const HomeGrid = styled.div`
   gap: 2px;
   grid-template-columns: repeat(5, 1fr);
   background-color: black;
-  min-height: 100vh;
 
   > section {
     background-color: #FFF4EB;;
@@ -17,6 +16,16 @@ const LargeSection = styled.section`
   position: relative;
   overflow: hidden;
   padding: 2rem;
+  position: relative;
+
+  ::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
 `;
 
 const HalfCircle = styled.div`
@@ -47,8 +56,11 @@ const BigAssTitle = styled.h1`
   padding: 1rem;;
 `;
 
-const NameSection = styled.section`
+const TitleSection = styled.section`
   grid-column: span 3;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 `;
 
 const MyPicture = styled.img`
@@ -85,10 +97,26 @@ const MyPictureContainer = styled.div`
 
 const LongSection = styled.section`
   grid-column: span 2;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+  h1 {
+    font-size: 5rem;
+    text-align: left;
+    margin: 0;
+  }
 `;
 
-const JobTitleSection = styled.section`
+const AllRightsReservedSection = styled.section`
   grid-column: span 4;
+  padding: 1rem;
+
+  h2 {
+    text-align: right;
+    font-weight: 600;
+  }
 `;
 
 export {
@@ -96,8 +124,8 @@ export {
   BigAssTitle,
   MyPicture,
   MyPictureContainer,
-  NameSection,
-  JobTitleSection,
+  TitleSection,
+  AllRightsReservedSection,
   LargeSection,
   HalfCircle,
   LongSection

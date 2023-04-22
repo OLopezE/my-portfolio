@@ -1,8 +1,17 @@
 import React from 'react'
 
+import workExperience from 'src/js/api/workExperience/workExperience'
+
 function Experience() {
   return (
-    <div>Experience</div>
+    <div>
+      <h3>
+        Professional Experience
+      </h3>
+      {workExperience.map((work) => (
+        <p>{work.name}</p>
+      ))}
+    </div>
   )
 }
 

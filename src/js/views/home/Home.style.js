@@ -112,8 +112,12 @@ const LongSection = styled.section`
 const AllRightsReservedSection = styled.section`
   grid-column: span 4;
   padding: 1rem;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
 
   h2 {
+    margin: 0;
     text-align: right;
     font-weight: 600;
   }

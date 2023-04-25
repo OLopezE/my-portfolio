@@ -50,17 +50,23 @@ const HalfCircle = styled.div`
 `;
 
 const BigAssTitle = styled.h1`
+  color: aliceblue;
   margin: 0;
   font-size: 7rem;
   text-align: left;
-  padding: 1rem;;
+  padding: 1rem;
+  text-shadow: 6px 6px #000;
 `;
 
 const TitleSection = styled.section`
-  grid-column: span 3;
+  grid-column: span 5;
   display: flex;
   justify-content: center;
   flex-direction: column;
+
+  > h1 {
+
+  }
 `;
 
 const MyPicture = styled.img`
@@ -106,6 +112,8 @@ const LongSection = styled.section`
     font-size: 5rem;
     text-align: left;
     margin: 0;
+    color: antiquewhite;
+    text-shadow: 6px 6px #000;
   }
 `;
 

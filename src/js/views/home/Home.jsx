@@ -20,15 +20,15 @@ const Home = () => {
         <BigAssTitle>Oscar Lopez Escobar</BigAssTitle>
         <BigAssTitle>Portfolio / 2023</BigAssTitle>
       </TitleSection>
-      <MyPictureContainer>
-        <MyPicture src={oscarPicture}/>
-      </MyPictureContainer>
       <LargeSection>
         <iframe src="https://giphy.com/embed/VDf9UxxaxKPm9OWHT9" width="360" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
       </LargeSection>
       <LongSection>
         <h1>Frontend Software Engineer</h1>
       </LongSection>
+      <MyPictureContainer>
+        <MyPicture src={oscarPicture}/>
+      </MyPictureContainer>
       <AllRightsReservedSection>
         <h2>All rights reserved</h2>
       </AllRightsReservedSection>

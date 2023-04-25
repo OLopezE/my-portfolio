@@ -7,7 +7,7 @@ const NavigationBar = styled.div`
   grid-template-columns: 1fr 3fr 1fr;
   background-color: black;
   gap: 2px;
-  min-height: 3.5rem;
+  height: 60px;
 
   > a {
     text-decoration: none;
@@ -32,6 +32,7 @@ const NavigationBar = styled.div`
 
   > div {
     background-color: #FFF4EB;
+
     > a {
       text-decoration: none;
       color: black;
@@ -79,7 +80,6 @@ const ContactLink = styled(Link)`
 const FeaturedLinks = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 4px;
 
     > a {
       display: flex;

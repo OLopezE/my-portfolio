@@ -7,7 +7,7 @@ const NavigationBar = styled.div`
   grid-template-columns: 1fr 3fr 1fr;
   background-color: black;
   gap: 2px;
-  height: 60px;
+  min-height: 8svh;
 
   > a {
     text-decoration: none;

@@ -9,7 +9,7 @@ function Experience() {
         Professional Experience
       </h3>
       {workExperience.map((work) => (
-        <p>{work.name}</p>
+        <p>{work.company}</p>
       ))}
     </div>
   )

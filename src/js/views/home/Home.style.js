@@ -107,7 +107,7 @@ const LongSection = styled.section`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  
+
   h1 {
     font-size: 5rem;
     text-align: left;

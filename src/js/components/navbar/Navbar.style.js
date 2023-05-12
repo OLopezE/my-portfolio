@@ -1,103 +1,76 @@
 import styled from 'styled-components';
 
-import { Link } from 'react-router-dom';
-
 const NavigationBar = styled.div`
+  position: fixed;
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  background-color: black;
-  gap: 2px;
-  min-height: 8svh;
+  padding: 1rem;
+  top: 0;
 
-  > a {
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-    font-size: 1rem;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.1s ease;
+  @media (min-width: 600px) {
+      position: relative;
+      height: 86px;
+    }
 
-    :hover {
-      font-size: 1.2rem;
-      color: #FFF4EB;
+  > button {
+    all: unset;
+    display: grid;
+    gap: 4px;
+    width: 40px;
+
+    span {
+      width: 100%;
+      height: 6px;
+      background-color: #F2D98D;
+      border-radius: 2px;
+      box-shadow: 3px 3px #54728C;
     }
 
     :active {
-      font-size: 0.9rem;
+      font-size: 1.2rem;
+    }
+
+    @media (min-width: 600px) {
+      display: none;
     }
   }
 
-  > div {
-    background-color: #FFF4EB;
+  a {
+    justify-content: left;
+    text-decoration: none;
+    color: #F2D98D;
+    font-weight: 600;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    transition: 0.1s ease;
+    padding: 1rem 0rem;
+    text-shadow: 3px 3px #54728C;
 
-    > a {
-      text-decoration: none;
-      color: black;
-      font-weight: 600;
-      transition: 0.1s ease;
-
-      :hover {
-        font-size: 1.2rem;
-      }
-
-      :active {
-        font-size: 0.9rem;
-      }
-    }
-  }
-  border-bottom: 2px solid black;
-`;
-
-const HomeLink = styled(Link)`
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, #3f5efb 0%, #fc5546 36%, #3f5efb 76%, #fc5546 99%); 
-    background-size: 400%;
-    animation: mymove 16s ease infinite alternate;
-    
-    @keyframes mymove {
-      0% {
-        background-position: left;
-      }
-      50% {
-        background-position: right;
-      }
-      100% {
-        background-position: left;
-      }
-    }
-`;
-
-const ContactLink = styled(Link)`
-    background-color: #FFF4EB;
-    :hover{
-        background-color: #fc5546;
-      }
-`;
-
-const FeaturedLinks = styled.div`
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    > a {
-      display: flex;
+    @media (min-width: 600px) {
       justify-content: center;
-      align-items: center;
-      height: 100%;
-      width: 100%;
-
-      :hover{
-        background-color: #3f5efb;
-        color: #FFF4EB;
-      }
+      font-size: 1.5rem;
     }
+
+    :hover {
+      font-size: 1.6rem;
+    }
+  }
+
+`;
+
+const NavigateOptions = styled.div`
+  display: ${({ visible }) => visible ? 'grid' : 'none'};
+  left: 4rem;
+
+  @media (min-width: 600px) {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    min-height: 8svh;
+  }
 `;
 
 export {
-  ContactLink,
-  HomeLink,
-  FeaturedLinks,
-  NavigationBar,
+  NavigateOptions,
+  NavigationBar
 };

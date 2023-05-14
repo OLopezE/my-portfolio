@@ -27,6 +27,10 @@ const PortfolioGrid = styled.section`
     letter-spacing: 4px;
     text-shadow: 4px 4px #54728C;
   }
+
+  a{
+    all: unset;
+  }
 `;
 
 export {

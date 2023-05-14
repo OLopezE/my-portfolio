@@ -10,7 +10,9 @@ function Portfolio() {
       <h1>Portfolio</h1>
       <div>
         <img src={naval} alt='naval arquitectura' />
-        <h3>Naval Arquitectura</h3>
+        <h3>
+          <a href='https://www.navalarquitectura.com' target='_blank'>Naval Arquitectura</a>
+        </h3>
       </div>
     </PortfolioGrid>
   );

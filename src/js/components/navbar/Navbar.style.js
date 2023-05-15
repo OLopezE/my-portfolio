@@ -8,7 +8,8 @@ const NavigationBar = styled.div`
 
   @media (min-width: 600px) {
       position: relative;
-      height: 86px;
+      min-height: 86px;
+      padding: 1rem;
     }
 
   > button {
@@ -33,6 +34,24 @@ const NavigationBar = styled.div`
       display: none;
     }
   }
+`;
+
+const NavigateOptions = styled.div`
+  background: rgb(84,114,140);
+  background: radial-gradient(circle, rgba(84,114,140,1) 60%, rgba(217,102,91,1) 100%);
+  display: ${({ visible }) => visible ? 'grid' : 'none'};
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 2px solid black;
+  box-shadow: 8px 8px black;
+
+  @media (min-width: 600px) {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    min-height: 6svh;
+    left: 0;
+  }
 
   a {
     justify-content: left;
@@ -44,11 +63,13 @@ const NavigationBar = styled.div`
     align-items: center;
     transition: 0.1s ease;
     padding: 1rem 0rem;
-    text-shadow: 3px 3px #54728C;
+    text-shadow: 3px 3px #2A3E59;
+    border-bottom: 1px solid black;
 
     @media (min-width: 600px) {
       justify-content: center;
       font-size: 1.5rem;
+      border-bottom: none;
     }
 
     :hover {
@@ -56,18 +77,6 @@ const NavigationBar = styled.div`
     }
   }
 
-`;
-
-const NavigateOptions = styled.div`
-  display: ${({ visible }) => visible ? 'grid' : 'none'};
-  left: 4rem;
-
-  @media (min-width: 600px) {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(5, 1fr);
-    min-height: 8svh;
-  }
 `;
 
 export {

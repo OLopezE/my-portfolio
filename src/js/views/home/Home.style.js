@@ -3,15 +3,10 @@ import styled from 'styled-components';
 const HomeGrid = styled.div`
   display: grid;
   gap: 2px;
-  background-color: black;
-  min-height: 92svh;
-
-  > section {
-    background-color: #FFF4EB;
-  }
 `;
 
 const LargeSection = styled.section`
+  z-index: -1;
   position: relative;
   display: grid;
   place-content: center;

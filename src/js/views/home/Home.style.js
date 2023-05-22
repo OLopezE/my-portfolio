@@ -1,11 +1,44 @@
 import styled from 'styled-components';
 
-const HomeGrid = styled.div`
+const HomeGrid = styled.section`
   display: grid;
-  gap: 2px;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  > div {
+    background-color: #2A3E59;
+    box-shadow: 12px 18px black;
+    padding: 1rem;
+    transition: 0.2s;
+
+    :hover {
+      transform: scale(1.01);
+    }
+  }
+
+  img {
+    width: 100%;
+
+  }
+
+  h1 {
+    color: #D9665B;
+    text-shadow: 3px 3px black;
+    font-size: 4rem;
+    text-align: left;
+
+    @media (min-width: 600px) {
+      font-size: 5rem;
+    }
+
+  }
 `;
 
-const LargeSection = styled.section`
+const LargeSection = styled.div`
   z-index: -1;
   position: relative;
   display: grid;
@@ -25,71 +58,17 @@ const LargeSection = styled.section`
   }
 `;
 
-const TitleSection = styled.section`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-
-  > h1 {
-    color: aliceblue;
-    margin: 0;
-    font-size: 5rem;
-    text-align: left;
-    padding: 1rem;
-    text-shadow: 6px 6px #000;
-  }
-`;
-
-const MyPicture = styled.img`
-  height: 70%;
-  border: 2px solid black;
-`;
-
-const MyPictureContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-
-  background: rgb(63,94,251);
-  background: radial-gradient(circle, #3f5efb 0%, #fc5546 36%, #3f5efb 76%, #fc5546 99%); 
-  background-size: 400%;
-  animation: mymove 16s ease infinite alternate;
-
-  @keyframes mymove {
-    0% {
-      background-position: left;
-    }
-    50% {
-      background-position: right;
-    }
-    100% {
-      background-position: left;
-    }
-  }
+const PictureContainer = styled.div`
 
 `;
 
-const LongSection = styled.section`
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-
-  h1 {
-    font-size: 5rem;
-    text-align: left;
-    margin: 0;
-    color: antiquewhite;
-    text-shadow: 6px 6px #000;
-  }
+const TitleContainer = styled.div`
+  grid-column: span 3;
 `;
 
 export {
   HomeGrid,
-  MyPicture,
-  MyPictureContainer,
-  TitleSection,
   LargeSection,
-  LongSection
+  PictureContainer,
+  TitleContainer
 }

@@ -6,7 +6,6 @@ const AboutMeSection = styled.section`
   padding: 1rem 3rem;
   text-align: left;
 
-
   > div {
     border: 2px solid black;
     box-shadow: 6px 6px black;
@@ -14,7 +13,7 @@ const AboutMeSection = styled.section`
   }
 
   h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     color: #F2D98D;
     margin: 2rem 0.5rem;
     letter-spacing: 8px;

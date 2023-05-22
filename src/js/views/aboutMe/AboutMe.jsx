@@ -6,6 +6,7 @@ const AboutMe = () => {
   return (
     <AboutMeSection>
       <div>
+        <p></p>
         <h1>About me</h1>
         <p>Hey there!</p>
         <p>My name is Oscar López, I am a 24 year old software engineer from Chihuahua, México.</p>

@@ -8,7 +8,7 @@ const NavigationBar = styled.div`
 
   @media (min-width: 600px) {
       position: relative;
-      min-height: 86px;
+      min-height: 7rem;
       padding: 1rem;
     }
 
@@ -46,11 +46,9 @@ const NavigateOptions = styled.div`
   box-shadow: 8px 8px black;
 
   @media (min-width: 600px) {
-    margin-top: 0;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    min-height: 6svh;
-    left: 0;
+    overflow: hidden;
   }
 
   a {
@@ -68,12 +66,12 @@ const NavigateOptions = styled.div`
 
     @media (min-width: 600px) {
       justify-content: center;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       border-bottom: none;
     }
 
     :hover {
-      font-size: 1.6rem;
+      transform: scale(1.1);
     }
   }
 

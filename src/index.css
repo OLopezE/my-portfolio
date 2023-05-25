@@ -9,7 +9,7 @@ body {
 
 @font-face {
   font-family: "Chillax";
-  src: url("/assets/media/fonts/Chillax-Semibold.woff");
+  src: url("/src/assets/media/fonts/Chillax-Semibold.woff");
 }
 
 code {

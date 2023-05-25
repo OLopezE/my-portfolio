@@ -66,7 +66,7 @@ const NavigateOptions = styled.div`
 
     @media (min-width: 600px) {
       justify-content: center;
-      font-size: 1.4rem;
+      font-size: 1.8rem;
       border-bottom: none;
     }
 

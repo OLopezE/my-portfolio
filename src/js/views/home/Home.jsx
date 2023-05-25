@@ -13,11 +13,15 @@ const Home = () => {
   return (
     <HomeGrid>
       <TitleContainer>
-        <h1>Oscar López Escobar / PORTFOLIO 2023</h1>
+        <h1>OSCAR LOPEZ ESCOBAR - PORTFOLIO 2023</h1>
       </TitleContainer>
-      <PictureContainer>
-        <img src={oscarPicture} alt="yo mero con mi amigo martin" />
-      </PictureContainer>
+
+      <LargeSection>
+        <iframe src="https://giphy.com/embed/IP6Lh6vrvkCvS" width="480" height="359" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      </LargeSection>
+
+      <img src={oscarPicture} alt="yo mero con mi amigo martin" />
+
       <LargeSection>
         <iframe src="https://giphy.com/embed/VDf9UxxaxKPm9OWHT9" width="360" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
       </LargeSection>

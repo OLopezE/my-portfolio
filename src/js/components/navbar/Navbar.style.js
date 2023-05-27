@@ -72,6 +72,7 @@ const NavigateOptions = styled.div`
 
     :hover {
       transform: scale(1.1);
+      color: #D9665B;
     }
   }
 

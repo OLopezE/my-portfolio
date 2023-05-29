@@ -3,36 +3,26 @@ import styled from 'styled-components';
 const HomeGrid = styled.section`
   display: grid;
   gap: 1.5rem;
-  padding: 6rem 2rem 4rem;
+  padding: 1rem;
 
   @media (min-width: 600px) {
+    padding: 6rem 2rem 4rem;
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  > div {
-    padding: 3rem;
-    transition: 0.4s;
-    display: grid;
-    place-content: center;
-
-    :hover {
-      transform: scale(1.01);
-    }
   }
 
   > div:first-child {
     padding: 1rem;
   }
 
-  img {
+  > img {
+    border: 2px solid #54728C;
     width: 100%;
-    box-shadow: 12px 18px black;
+    box-shadow: 12px 18px #54728C;
   }
 
   h1 {
-    font-family: Chillax;
     color: #F2D98D;
-    text-shadow: 3px 3px #54728C;
+    text-shadow: 5px 8px #54728C;
     font-size: 3.5rem;
     text-align: left;
 
@@ -43,13 +33,10 @@ const HomeGrid = styled.section`
 `;
 
 const LargeSection = styled.div`
-  background-color: transparent !important;
-  box-shadow: 0 0 transparent !important;
-  border: 0px !important;
-  z-index: -1;
   position: relative;
   display: grid;
   place-content: center;
+  z-index: -1;
 
 
   > iframe {
@@ -66,10 +53,6 @@ const LargeSection = styled.div`
   }
 `;
 
-const PictureContainer = styled.div`
-
-`;
-
 const TitleContainer = styled.div`
   @media (min-width: 600px) {
     grid-column: span 3;
@@ -79,6 +62,5 @@ const TitleContainer = styled.div`
 export {
   HomeGrid,
   LargeSection,
-  PictureContainer,
   TitleContainer
 }

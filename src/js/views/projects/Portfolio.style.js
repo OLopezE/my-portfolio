@@ -2,23 +2,24 @@ import styled from "styled-components";
 
 const PortfolioGrid = styled.section`
   display: grid;
-  gap: 1rem;
-  margin-top: 1rem;
+  gap: 2rem;
+  padding: 6rem 1rem;
+  justify-content: center;
 
   h1 {
     font-size: 3rem;
     color: #F2D98D;
     margin: 0.5rem;
     letter-spacing: 8px;
-    text-shadow: 6px 6px #54728C;
+    text-shadow: 5px 8px #54728C;
+
+    @media (min-width: 600px) {
+      font-size: 5rem;
+    }
   }
 
-  div {
-    width: 100%;
-
-    > img {
-      width: 300px;
-    }
+  img {
+    width: 500px;
   }
 
   h3 {
@@ -29,8 +30,15 @@ const PortfolioGrid = styled.section`
     text-shadow: 4px 4px #54728C;
   }
 
-  a{
+  a {
     all: unset;
+    width: fit-content;
+    transition: 0.3s;
+
+    :hover {
+      transform: scale(1.02);
+      cursor: pointer;
+    }
   }
 `;
 

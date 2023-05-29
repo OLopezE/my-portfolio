@@ -1,6 +1,11 @@
 import React from 'react';
 
-import { ContactCard } from './Contact.style';
+import {
+  ContactContainer,
+  ContactCard,
+  ContactGrid,
+  ContactTitle
+} from './Contact.style';
 
 const Contact = () => {
 
@@ -20,17 +25,20 @@ const Contact = () => {
     {
       name: 'Instagram',
       url: 'https://www.instagram.com/oscarlopezescobar/'
+    },
+    {
+      name: 'Email Me',
+      url: 'olopeze@outlook.com'
     }
   ]
 
   return (
-    <div>
-      <h1>Get in contact with me</h1>
-      <p>These are my socials</p>
-      {socials.map(social => (
-        <a href={social.url}>{social.name}</a>
-      ))}
-    </div>
+    <ContactContainer>
+      <ContactTitle>Get in contact with me</ContactTitle>
+      <ContactGrid>
+      {socials.map(social => <ContactCard href={social.url} target='_blank' >{social.name}</ContactCard>)}
+      </ContactGrid>
+    </ContactContainer>
   )
 }
 

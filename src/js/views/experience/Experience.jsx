@@ -5,9 +5,9 @@ import workExperience from 'src/js/api/workExperience/workExperience'
 function Experience() {
   return (
     <div>
-      <h3>
+      <h1>
         Professional Experience
-      </h3>
+      </h1>
       {workExperience.map((work) => (
         <p>{work.company}</p>
       ))}

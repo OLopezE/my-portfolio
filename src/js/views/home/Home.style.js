@@ -5,8 +5,16 @@ const HomeGrid = styled.section`
   gap: 1.5rem;
   padding: 1rem;
 
-  @media (min-width: 600px) {
-    padding: 6rem 2rem 4rem;
+  * {
+    transition: 0.2s;
+
+    :hover {
+      transform: scale(1.02);
+    }
+  }
+
+  @media (min-width: 900px) {
+    padding: 5rem 2rem 4rem;
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -14,12 +22,20 @@ const HomeGrid = styled.section`
     padding: 1rem;
   }
 
-  > img {
-    border: 2px solid #54728C;
-    width: 100%;
-    box-shadow: 12px 18px #54728C;
+  > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
+  img {
+    border: 2px solid #54728C;
+    width: 75%;
+    box-shadow: 12px 18px #54728C;
+  }
+`;
+
+const TitleContainer = styled.div`
   h1 {
     color: #F2D98D;
     text-shadow: 5px 8px #54728C;
@@ -30,37 +46,28 @@ const HomeGrid = styled.section`
       font-size: 5rem;
     }
   }
-`;
 
-const LargeSection = styled.div`
-  position: relative;
-  display: grid;
-  place-content: center;
-  z-index: -1;
-
-
-  > iframe {
-    width: 100%;
-  }
-
-  ::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-  }
-`;
-
-const TitleContainer = styled.div`
-  @media (min-width: 600px) {
+  @media (min-width: 900px) {
     grid-column: span 3;
   }
 `;
 
+const TextContainer = styled.div`
+  padding: 2rem 4rem;
+
+  @media (min-width: 600px) {
+    grid-column: span 2;
+  }
+
+  p {
+    font-family: Chillax;
+    font-size: 2.5rem;
+  }
+
+`;
+
 export {
   HomeGrid,
-  LargeSection,
-  TitleContainer
+  TitleContainer,
+  TextContainer
 }

@@ -2,16 +2,27 @@ import React from 'react'
 
 import workExperience from 'src/js/api/workExperience/workExperience'
 
-function Experience() {
+import { WorkExperienceGrid, TitleContainer, WorkContainer } from './Experience.style'
+
+const WorkCard = ({ work }) => {
   return (
     <div>
-      <h1>
-        Professional Experience
-      </h1>
-      {workExperience.map((work) => (
-        <p>{work.company}</p>
-      ))}
+      <h3>{work.jobTitle}</h3>
+      <button>Select</button>
     </div>
+  )
+};
+
+const Experience = () => {
+  return (
+    <WorkExperienceGrid>
+      <TitleContainer>
+        <h1>Professional Experience</h1>
+      </TitleContainer>
+      <WorkContainer>
+        {workExperience.map((work) => (<WorkCard work={work}  />))}
+      </WorkContainer>
+    </WorkExperienceGrid>
   )
 }
 

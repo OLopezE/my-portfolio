@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const HomeGrid = styled.section`
   display: grid;
   gap: 1.5rem;
-  padding: 1rem;
+  padding: 1rem 1rem 2rem;
 
   * {
     transition: 0.2s;

@@ -2,13 +2,17 @@ import React from 'react'
 
 import workExperience from 'src/js/api/workExperience/workExperience'
 
-import { WorkExperienceGrid, TitleContainer, WorkContainer } from './Experience.style'
+import {
+  WorkExperienceGrid,
+  TitleContainer,
+  WorkContainer,
+  WorkButton
+} from './Experience.style'
 
 const WorkCard = ({ work }) => {
   return (
     <div>
-      <h3>{work.jobTitle}</h3>
-      <button>Select</button>
+      <WorkButton>{work.jobTitle} ({work.startDate + ' to ' + work.endDate})</WorkButton>
     </div>
   )
 };

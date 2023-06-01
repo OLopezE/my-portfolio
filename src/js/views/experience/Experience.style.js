@@ -4,6 +4,7 @@ const WorkExperienceGrid = styled.section`
   display: grid;
   gap: 1.5rem;
   padding: 1rem;
+  overflow: hidden;
 
   * {
     transition: 0.2s;
@@ -37,11 +38,33 @@ const TitleContainer = styled.div`
 `;
 
 const WorkContainer = styled.div`
-  background-color: #2A3E59;
-  height: 240px;
+  min-height: 240px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+
+  > div {
+    border: 2px solid black;
+    background: rgb(84,114,140);
+    background: radial-gradient(circle, rgba(84,114,140,1) 60%, rgba(217,102,91,1) 100%);
+    box-shadow: 6px 6px black;
+  }
 `;
 
-export { WorkExperienceGrid, TitleContainer, WorkContainer };
+const WorkButton = styled.button`
+  all: unset;
+  color: #F2D98D;
+  font-family: Chillax;
+  font-size: 2rem;
+  cursor: pointer;
+
+  :hover {
+    color: #D9665B;
+  }
+`;
+
+export {
+  WorkExperienceGrid,
+  TitleContainer,
+  WorkContainer,
+  WorkButton
+};

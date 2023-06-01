@@ -36,8 +36,8 @@ const workExperience = [
       'Utilized HTML, CSS, and JS for the frontend and PHP and MySQL for the backend, building fully-featured web applications from the ground up.'
     ],
     picture: '',
-    startDate: 'November 2021',
-    endDate: 'March 2022'
+    startDate: 'October 2019',
+    endDate: 'February 2020'
   }
 ]
 

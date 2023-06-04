@@ -6,14 +6,6 @@ const WorkExperienceGrid = styled.section`
   padding: 1rem;
   overflow: hidden;
 
-  * {
-    transition: 0.2s;
-
-    :hover {
-      transform: scale(1.02);
-    }
-  }
-
   @media (min-width: 900px) {
     padding: 5rem 2rem 4rem;
   }
@@ -23,6 +15,11 @@ const TitleContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.2s;
+
+  :hover {
+    transform: scale(1.02);
+  }
 
   h1 {
     color: #F2D98D;
@@ -38,27 +35,45 @@ const TitleContainer = styled.div`
 `;
 
 const WorkContainer = styled.div`
-  min-height: 240px;
   display: grid;
   gap: 1rem;
 
+  @media (min-width: 600px) {
+    padding: 2rem 4rem;
+  }
+
   > div {
-    border: 2px solid black;
-    background: rgb(84,114,140);
-    background: radial-gradient(circle, rgba(84,114,140,1) 60%, rgba(217,102,91,1) 100%);
-    box-shadow: 6px 6px black;
+    display: grid;
+    gap: 1rem
+  }
+
+  ul {
+    color: #F2D98D;
+    padding: 0 2rem;
+  }
+
+  li {
+    font-family: Chillax;
+    text-align: left;
+    font-size: 1.5rem;
   }
 `;
 
 const WorkButton = styled.button`
   all: unset;
+  width: 100%;
+  border-bottom: 4px solid #F2D98D;
+  text-align: left;
   color: #F2D98D;
   font-family: Chillax;
   font-size: 2rem;
   cursor: pointer;
+  transition: 0.2s;
 
   :hover {
-    color: #D9665B;
+    transform: scale(1.02);
+    border-bottom: 4px solid #2A3E59;
+    color: #2A3E59;
   }
 `;
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, Fragment } from 'react'
 
 import workExperience from 'src/js/api/workExperience/workExperience'
 
@@ -10,9 +10,23 @@ import {
 } from './Experience.style'
 
 const WorkCard = ({ work }) => {
+  const [isDescriptionVisible, toggleDescription] = useState(false);
   return (
     <div>
-      <WorkButton>{work.jobTitle} ({work.startDate + ' to ' + work.endDate})</WorkButton>
+      <WorkButton
+        onClick={() => toggleDescription(!isDescriptionVisible)}
+      >
+        {work.jobTitle} ({work.startDate + ' to ' + work.endDate} @ {work.company})
+      </WorkButton>
+      { isDescriptionVisible && (
+        <ul>
+          {work.description.map(
+            bulletPoint => (
+              <li>{bulletPoint}</li>
+            )
+          )}
+        </ul>
+      )}
     </div>
   )
 };

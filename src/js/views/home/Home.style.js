@@ -29,9 +29,9 @@ const HomeGrid = styled.section`
   }
 
   img {
-    border: 2px solid #54728C;
+    border: 2px solid #2A3E59;
     width: 75%;
-    box-shadow: 12px 18px #54728C;
+    box-shadow: 12px 18px #2A3E59;
   }
 `;
 
@@ -62,6 +62,7 @@ const TextContainer = styled.div`
   p {
     font-family: Chillax;
     font-size: 2.5rem;
+    color: #2A3E59;
   }
 
 `;

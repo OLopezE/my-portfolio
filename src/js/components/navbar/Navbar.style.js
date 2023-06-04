@@ -42,8 +42,8 @@ const NavigateOptions = styled.div`
   display: ${({ visible }) => visible ? 'grid' : 'none'};
   margin-top: 1rem;
   padding: 1rem;
-  border: 2px solid black;
-  box-shadow: 8px 8px black;
+  border: 2px solid #2A3E59;
+  box-shadow: 8px 8px #2A3E59;
 
   @media (min-width: 600px) {
     display: grid;

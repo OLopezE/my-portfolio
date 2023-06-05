@@ -2,21 +2,25 @@ import styled from "styled-components";
 
 const AboutMeSection = styled.section`
   display: grid;
-  padding: 6rem 3rem;
-  gap: 2rem;
+  padding: 1rem;
+  gap: 1rem;
 
   @media (min-width: 800px) {
+    padding: 6rem 3rem;
     grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
   }
 
   > div {
-    border: 2px solid black;
-    box-shadow: 6px 6px black;
-    padding: 1rem 3rem;
-    grid-column: span 2;
+    padding: 1rem;
+
+    @media (min-width: 600px) {
+      grid-column: span 2;
+    }
   }
 
   h1 {
+    font-size: 3rem;
     text-shadow: 5px 8px #54728C;
     letter-spacing: 8px;
 
@@ -27,19 +31,24 @@ const AboutMeSection = styled.section`
   }
 
   img {
-    height: 500px;
+    width: 100%;
+    border: 1px solid #2A3E59;
+    box-shadow: 5px 8px #2A3E59;
+
+    @media (min-width: 600px) {
+      width: 70%;
+    }
   }
 
   p {
     text-align: left;
-    font-size: 2rem;
-    color: #F2D98D;
+    font-family: Chillax;
+    font-size: 1.5rem;
+    color: #2A3E59;
     letter-spacing: 2px;
-    text-shadow: 2px 2px #54728C;
   }
 `;
 
 export {
   AboutMeSection
 }
-

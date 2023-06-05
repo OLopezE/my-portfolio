@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {
   ContactContainer,
   ContactCard,
@@ -8,7 +6,6 @@ import {
 } from './Contact.style';
 
 const Contact = () => {
-
   const socials = [
     {
       name: 'LinkedIn',
@@ -28,7 +25,11 @@ const Contact = () => {
     },
     {
       name: 'Email Me',
-      url: 'olopeze@outlook.com'
+      url: 'mailto:olopeze@outlook.com'
+    },
+    {
+      name: 'Call me',
+      url: 'tel:+526145138752'
     }
   ]
 

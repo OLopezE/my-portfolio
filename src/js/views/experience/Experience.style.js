@@ -24,7 +24,7 @@ const TitleContainer = styled.div`
   h1 {
     color: #F2D98D;
     text-shadow: 5px 8px #54728C;
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     text-align: left;
     letter-spacing: 8px;
 
@@ -56,6 +56,8 @@ const WorkContainer = styled.div`
     font-family: Chillax;
     text-align: left;
     font-size: 1.5rem;
+    color: #2A3E59;
+    border-bottom: 1px solid #2A3E59;
   }
 `;
 

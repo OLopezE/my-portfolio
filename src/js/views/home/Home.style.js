@@ -30,8 +30,12 @@ const HomeGrid = styled.section`
 
   img {
     border: 2px solid #2A3E59;
-    width: 75%;
     box-shadow: 12px 18px #2A3E59;
+    width: 100%;
+
+    @media (min-width: 900px) {
+      width: 75%;
+    }
   }
 `;
 
@@ -39,7 +43,7 @@ const TitleContainer = styled.div`
   h1 {
     color: #F2D98D;
     text-shadow: 5px 8px #54728C;
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-align: left;
 
     @media (min-width: 600px) {
@@ -53,10 +57,13 @@ const TitleContainer = styled.div`
 `;
 
 const TextContainer = styled.div`
-  padding: 2rem 4rem;
+  text-align: left;
+  padding: 1rem;
 
   @media (min-width: 600px) {
     grid-column: span 2;
+    padding: 2rem 4rem;
+    text-align: center;
   }
 
   p {
@@ -64,7 +71,6 @@ const TextContainer = styled.div`
     font-size: 2.5rem;
     color: #2A3E59;
   }
-
 `;
 
 export {

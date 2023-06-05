@@ -8,10 +8,12 @@ function Portfolio() {
   return (
     <PortfolioGrid>
       <h1>Portfolio</h1>
-      <a href='https://www.navalarquitectura.com' target='_blank'>
-        <img src={naval} alt='naval arquitectura' />
-        <h3>Naval Arquitectura</h3>
-      </a>
+      <div>
+        <a href='https://www.navalarquitectura.com' target='_blank'>
+          <img src={naval} alt='naval arquitectura' />
+          <h3>Naval Arquitectura</h3>
+        </a>
+      </div>
     </PortfolioGrid>
   );
 };

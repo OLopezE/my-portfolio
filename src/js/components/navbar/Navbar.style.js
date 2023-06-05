@@ -5,6 +5,7 @@ const NavigationBar = styled.div`
   display: grid;
   padding: 1rem;
   top: 0;
+  z-index: 10;
 
   @media (min-width: 600px) {
       position: relative;

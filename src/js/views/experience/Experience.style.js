@@ -24,7 +24,7 @@ const TitleContainer = styled.div`
   h1 {
     color: #F2D98D;
     text-shadow: 5px 8px #54728C;
-    font-size: 2.8rem;
+    font-size: 2rem;
     text-align: left;
     letter-spacing: 8px;
 
@@ -55,7 +55,7 @@ const WorkContainer = styled.div`
   li {
     font-family: Chillax;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #2A3E59;
     border-bottom: 1px solid #2A3E59;
   }
@@ -68,7 +68,7 @@ const WorkButton = styled.button`
   text-align: left;
   color: #F2D98D;
   font-family: Chillax;
-  font-size: 2rem;
+  font-size: 1.6rem;
   cursor: pointer;
   transition: 0.2s;
 

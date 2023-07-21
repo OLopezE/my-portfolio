@@ -7,6 +7,33 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+:root {
+  background: rgb(162, 215, 235);
+  background: radial-gradient(circle, rgb(74, 119, 75) 34%, rgb(148, 99, 136) 100%);
+  background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+
+}
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75%{
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
 @font-face {
   font-family: "Chillax";
   src: url("/src/assets/media/fonts/Chillax-Semibold.woff");

@@ -1,11 +1,8 @@
-.App {
-  text-align: center;
+body {
   display: grid;
-  padding-top: 3rem;
-
-  @media (min-width: 600px) {
-    padding: 0;
-  }
+  place-items: center;
+  height: 100svh;
+  width: 100svw;
 }
 
 h1, h2, h3 {
@@ -24,8 +21,4 @@ h1, h2, h3 {
 
 .App-link {
   color: #61dafb;
-}
-
-body {
-  background-color: #A6786D;
 }

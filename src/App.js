@@ -7,19 +7,21 @@ import {
   Contact,
   Portfolio,
   AboutMe,
-  Experience
+  Experience,
+  Prototype
 } from './js/views';
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      {/* <Navbar/> */}
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Prototype />} />
+        {/* <Route path='/' element={<Home />} />
         <Route path='/work-experience' element={<Experience />} />
         <Route path='/portfolio' element={<Portfolio />} />
         <Route path='/about-me' element={<AboutMe />} />
-        <Route path='/contact-me' element={<Contact />} />
+        <Route path='/contact-me' element={<Contact />} /> */}
       </Routes>
     </div>
   );

@@ -39,6 +39,16 @@ body {
   src: url("/src/assets/media/fonts/Chillax-Semibold.woff");
 }
 
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("/src/assets/media/fonts/SpaceGrotesk-Variable.woff");
+}
+
+p {
+  font-family: SpaceGrotesk;
+  font-weight: 600;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

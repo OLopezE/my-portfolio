@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Prototype = () => {
   return (
@@ -9,4 +9,4 @@ const Prototype = () => {
   )
 }
 
-export default Prototype
+export default Prototype;

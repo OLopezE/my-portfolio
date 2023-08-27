@@ -1,3 +1,4 @@
-import MainView from "./mainView";
+import FireLinkShrine from "./firelinkShrine";
+import MeetMe from "./meetMe";
 
-export { MainView };
+export { FireLinkShrine, MeetMe };

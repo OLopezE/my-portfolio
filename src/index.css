@@ -4,8 +4,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: #f8eeee;
-  background-color: #030407;
+  color: #F2F2F2;
+  background-color: #343434;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -53,10 +53,19 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("/fonts/SpaceGrotesk-Variable.ttf");
+}
+
+h1, h2, h3, p {
+  font-family: SpaceGrotesk;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #f8eeee;
+    color: #343434;
+    background-color: #F2F2F2;
   }
   a:hover {
     color: #747bff;

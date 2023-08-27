@@ -1,14 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
-import { MainView } from './views'
+import Main from './App.style';
 
-function App() {
-  return (
-    <MainView />
-  )
-}
+import { FireLinkShrine, MeetMe } from './views'
+
+const App = () => (
+  <Main>
+    {/* <FireLinkShrine /> */}
+    <MeetMe />
+  </Main>
+);
 
 export default App

@@ -6,7 +6,7 @@ import { FireLinkShrine, MeetMe } from './views'
 
 const App = () => (
   <Main>
-    {/* <FireLinkShrine /> */}
+    <FireLinkShrine />
     <MeetMe />
   </Main>
 );

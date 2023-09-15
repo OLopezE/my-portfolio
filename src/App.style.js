@@ -7,6 +7,7 @@ const Main = styled.main`
   color: ${palette.dark.text};
 
   section {
+    min-height: 100vh;
     min-height: 100svh;
   }
 

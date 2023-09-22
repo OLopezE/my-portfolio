@@ -37,15 +37,21 @@ const FireLinkSection = styled.section`
   @media (prefers-color-scheme: light) {
     background-image: linear-gradient(${palette.light.accent}80 4px, transparent 4px), linear-gradient(to right, ${palette.light.accent}80 4px, transparent 4px);
 
+    > div {
+    padding: 1rem;
+    background-color: ${palette.light.secondary};
+    box-shadow: 10px 10px 0 ${palette.light.secondary}a1;
+  }
+
     h1 {
-      color: ${palette.light.secondary};
-      text-shadow: 5px 5px 0 ${palette.light.accent};
+      color: ${palette.light.accent};
+      text-shadow: 5px 5px 0 ${palette.light.primary};
     }
 
     @media (min-width: 800px) {
       h1 {
         font-size: 6rem;
-        text-shadow: 10px 10px 0 ${palette.light.accent}a1;
+        text-shadow: 10px 10px 0 ${palette.light.primary}a1;
       }
   }
 }

@@ -1,19 +1,17 @@
-import styled from 'styled-components';
+import React, { useContext } from "react";
 
-import palette from './theme/palette/palette';
+import styled, { ThemeContext } from "styled-components";
 
 const Main = styled.main`
-  background-color: ${palette.dark.background};
-  color: ${palette.dark.text};
+  background-color: ${({ palette }) => palette.background};
+
+  h1, h2, h3, h4, h5, h6, p {
+    color: ${({ palette }) => palette.text};
+  }
 
   section {
     min-height: 100vh;
     min-height: 100svh;
-  }
-
-  @media (prefers-color-scheme: light) {
-    color: ${palette.light.text};;
-    background-color: ${palette.light.background};
   }
 `;
 

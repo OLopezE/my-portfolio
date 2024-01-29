@@ -1,15 +1,15 @@
 import './App.css'
 
-import Main from './App.style';
+import MyApp from './MyApp';
 
-import { FireLinkShrine, MeetMe, ContactMe } from './views'
+import { ThemeProvider } from './theme/ThemeProvider';
 
-const App = () => (
-  <Main>
-    <FireLinkShrine />
-    <MeetMe />
-    {/* <ContactMe /> */}
-  </Main>
-);
+const App = () => {
+return (
+    <ThemeProvider>
+      <MyApp />
+    </ThemeProvider>
+  );
+};
 
 export default App

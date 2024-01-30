@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { ThemeContext } from './theme/ThemeProvider';
 
 import Main from './App.style';
-import { FireLinkShrine, MeetMe } from './views';
+import { FireLinkShrine, MeetMe, ContactMe } from './views';
 
 const MyApp = () => {
   const { themeColor, myPalette } = useContext(ThemeContext);
@@ -10,7 +10,7 @@ const MyApp = () => {
   return (
     <Main palette={myPalette}>
       <FireLinkShrine />
-      {/* <MeetMe /> */}
+      <MeetMe />
       {/* <ContactMe /> */}
     </Main>
   )

@@ -13,6 +13,12 @@ const Main = styled.main`
     min-height: 100vh;
     min-height: 100svh;
   }
+
+  footer {
+    background-color: ${({ palette }) => palette.secondary};
+    min-height: 10vh;
+    min-height: 10svh;
+  }
 `;
 
 export default Main;

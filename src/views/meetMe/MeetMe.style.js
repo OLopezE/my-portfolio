@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 const MeetMeSection = styled.section`
+  background-color: ${({ palette }) => palette.secondary};
   display: flex;
   flex-direction: column;
   gap: 1rem;

@@ -12,6 +12,27 @@ const FireLinkSection = styled.section`
     border-radius: 50%;
   }
 
+  > div {
+
+  }
+
+  h1, h2, p {
+    margin: 0;
+    text-align: left;
+  }
+
+  p {
+    margin-left: 1rem;
+  }
+
+  h2 {
+    margin-left: 0.5rem;
+  }
+
+  h1 {
+    color: ${({ palette }) => palette.primary}
+  }
+
   @media (min-width: 800px) {
     flex-direction: row;
     gap: 4rem;

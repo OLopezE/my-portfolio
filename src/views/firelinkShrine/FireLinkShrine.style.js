@@ -6,6 +6,7 @@ const FireLinkSection = styled.section`
   justify-content: center;
   flex-direction: column-reverse;
   gap: 1rem;
+  padding: 1rem;
 
   img {
     width: 60%;

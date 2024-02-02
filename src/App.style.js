@@ -10,6 +10,10 @@ const Main = styled.main`
     color: ${({ palette }) => palette.text};
   }
 
+  a {
+    color: ${({ palette }) => palette.primary};
+  }
+
   section {
     min-height: 100vh;
     min-height: 100svh;

@@ -17,7 +17,7 @@ const MyApp = () => {
       <FireLinkShrine />
       <Building />
       {/* <MeetMe /> */}
-      {/* <ContactMe /> */}
+      <ContactMe />
     </Main>
   )
 }

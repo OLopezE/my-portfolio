@@ -18,10 +18,11 @@ const MeetMe = () => {
 
   return (
     <MeetMeSection palette={myPalette}>
-      <h2>Meet Oscar</h2>
+      <h2>About me</h2>
       <div>
-        <img src={myself} alt="handsome Oscar Lopez at Tequila" />
-        <p>I am a {getAge(new Date())} year old software engineer from Chihuahua, Mexico. React enjoyer, but also a fan of reading about good practices and design patterns.</p>
+        <p>I am a {getAge(new Date())} year old software engineer proudly from Chihuahua, Mexico. I have also lived in Monterrey and Guadalajara (currently living here).</p>
+        <p>I started coding in 2017 when I started college in Tec de Monterrey. My graduation was in december 2021 and since then I have been working in 100 Ladrillos as a frontend software engineer.</p>
+        <p>My main focus these days is learning and applying all I can about good software engineering such as principles and design patterns. I try to conceive well thought code solving difficult tasks in creative yet simple ways!</p>
       </div>
     </MeetMeSection>
   )

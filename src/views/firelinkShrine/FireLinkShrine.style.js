@@ -5,13 +5,12 @@ const FireLinkSection = styled.section`
   align-items: center;
   justify-content: center;
   flex-direction: column-reverse;
-  gap: 1rem;
-  padding: 1rem;
+  gap: 2rem;
 
   img {
-    width: 60%;
+    width: 300px;
     border-radius: 50%;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1 / 1;
   }
 
   > div {

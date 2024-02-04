@@ -16,7 +16,7 @@ const ContactMeMomo = styled.div`
     left: 4rem;
 
     ul {
-      display: block;
+      flex-direction: column;
     }
 
     a {

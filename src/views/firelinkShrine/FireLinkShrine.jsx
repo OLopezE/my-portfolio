@@ -12,7 +12,7 @@ const FireLinkShrine = () => {
     <FireLinkSection palette={myPalette}>
       <div>
         <p>Hi, I'm</p>
-        <h1>OSCAR LOPEZ ESCOBAR</h1>
+        <h1>OSCAR LÓPEZ ESCOBAR</h1>
         <h2>Welcome to my portfolio</h2>
       </div>
       <img src={myself} />

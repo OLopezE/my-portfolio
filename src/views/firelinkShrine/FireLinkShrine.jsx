@@ -15,7 +15,7 @@ const FireLinkShrine = () => {
         <h1>OSCAR LÓPEZ ESCOBAR</h1>
         <h2>Welcome to my portfolio</h2>
       </div>
-      <img src={myself} />
+      <img src={myself} alt="me at sandia tramway"/>
     </FireLinkSection>
   )
 }

@@ -1,20 +1,29 @@
 import styled from 'styled-components'
 
 const MeetMeSection = styled.section`
-  > h2 {
+  margin: 0 auto;
+
+  h2, p {
     text-align: left;
   }
 
-  margin: 0 auto;
-
-  p {
-    text-align: left;
+  img {
+    width: 80%;
+    border-radius: 4px;
   }
 
   @media (min-width: 800px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
     > div {
-    width: 30%;
-  }
+      width: 528px;
+    }
+
+    img {
+      justify-self: center;
+    }
   }
 `;
 

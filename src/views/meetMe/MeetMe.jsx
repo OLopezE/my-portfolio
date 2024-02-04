@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { ThemeContext } from '../../theme/ThemeProvider';
 
 import { MeetMeSection } from './MeetMe.style';
-import myself from '/images/me_tequila.jpeg'
+import myself from '/images/me_at_barrancas.png'
 
 const MeetMe = () => {
   const { themeColor, myPalette } = useContext(ThemeContext);
@@ -18,12 +18,14 @@ const MeetMe = () => {
 
   return (
     <MeetMeSection palette={myPalette}>
-      <h2>About me</h2>
       <div>
-        <p>I am a {getAge(new Date())} year old software engineer proudly from Chihuahua, Mexico. I have also lived in Monterrey and Guadalajara (currently living here).</p>
-        <p>I started coding in 2017 when I started college in Tec de Monterrey. My graduation was in december 2021 and since then I have been working in 100 Ladrillos as a frontend software engineer.</p>
+        <h2>About me</h2>
+        <p>I am a {getAge(new Date())} year old software engineer proudly from Chihuahua, Mexico. I have also lived in Monterrey and (currently) Guadalajara.</p>
+        <p>Among my favorite activies are hiking, painting with watercolor, skateboarding, woodworking and eating burguers.</p>
+        <p>My journey coding began in 2017 when I started college in Tec de Monterrey. My graduation was in december 2021 and since then I have been working in a <a href='https://100ladrillos.com/' target='_blank'>fintech startup</a> as a frontend software engineer.</p>
         <p>My main focus these days is learning and applying all I can about good software engineering such as principles and design patterns. I try to conceive well thought code solving difficult tasks in creative yet simple ways!</p>
       </div>
+      <img src={myself} alt="me at las barrancas del cobre" />
     </MeetMeSection>
   )
 }

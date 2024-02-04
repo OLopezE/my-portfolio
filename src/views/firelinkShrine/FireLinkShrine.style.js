@@ -11,6 +11,7 @@ const FireLinkSection = styled.section`
   img {
     width: 60%;
     border-radius: 50%;
+    aspect-ratio: 1/1;
   }
 
   > div {

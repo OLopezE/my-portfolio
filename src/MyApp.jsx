@@ -6,7 +6,8 @@ import {
   Building,
   FireLinkShrine,
   MeetMe,
-  ContactMe
+  ContactMe,
+  MyTechStack
 } from './views';
 
 const MyApp = () => {
@@ -16,6 +17,7 @@ const MyApp = () => {
     <Main palette={myPalette}>
       <FireLinkShrine />
       <MeetMe />
+      <MyTechStack />
       <Building />
       <ContactMe />
     </Main>

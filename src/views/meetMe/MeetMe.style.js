@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
 const MeetMeSection = styled.section`
-  margin: 0 auto;
+  display: grid;
+  place-content: center;
+  /* background-color: ${({ palette }) => palette.accent}; */
 
   h2, p {
     text-align: left;
@@ -13,12 +15,10 @@ const MeetMeSection = styled.section`
   }
 
   @media (min-width: 800px) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-
     > div {
-      width: 528px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
     }
 
     img {

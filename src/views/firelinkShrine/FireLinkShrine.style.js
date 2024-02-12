@@ -1,11 +1,8 @@
 import styled from 'styled-components';
 
 const FireLinkSection = styled.section`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column-reverse;
-  gap: 2rem;
+  display: grid;
+  place-content: center;
 
   img {
     width: 300px;
@@ -14,7 +11,20 @@ const FireLinkSection = styled.section`
   }
 
   > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 2rem;
 
+    @media (min-width: 800px) {
+      flex-direction: row;
+      gap: 4rem;
+
+      img {
+        width: 30%;
+      }
+    }
   }
 
   h1, h2, p {
@@ -32,15 +42,6 @@ const FireLinkSection = styled.section`
 
   h1 {
     color: ${({ palette }) => palette.primary}
-  }
-
-  @media (min-width: 800px) {
-    flex-direction: row;
-    gap: 4rem;
-
-    img {
-      width: 30%;
-    }
   }
 `;
 

@@ -4,9 +4,8 @@ import styled, { ThemeContext } from "styled-components";
 
 const Main = styled.main`
   background-color: ${({ palette }) => palette.background};
-  padding: 1rem;
-  display: grid;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
 
   h1, h2, h3, h4, h5, h6, p {
     color: ${({ palette }) => palette.text};
@@ -19,7 +18,10 @@ const Main = styled.main`
   section {
     min-height: 100vh;
     min-height: 100svh;
-    max-width: 980px;
+
+    > div {
+      max-width: 980px;
+    }
   }
 
   footer {

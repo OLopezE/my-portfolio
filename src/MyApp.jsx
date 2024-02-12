@@ -17,7 +17,7 @@ const MyApp = () => {
     <Main palette={myPalette}>
       <FireLinkShrine />
       <MeetMe />
-      <MyTechStack />
+      {/* <MyTechStack /> */}
       <Building />
       <ContactMe />
     </Main>

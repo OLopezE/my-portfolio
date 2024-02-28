@@ -6,6 +6,7 @@ const Main = styled.main`
   background-color: ${({ palette }) => palette.background};
   display: flex;
   flex-direction: column;
+  transition: all 1s;
 
   h1, h2, h3, h4, h5, h6, p {
     color: ${({ palette }) => palette.text};
